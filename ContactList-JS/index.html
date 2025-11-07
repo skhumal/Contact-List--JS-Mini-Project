@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact List - JS Mini Project</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body class="container" role="main">
+    <header>
+      <div>
+        <h1>Contact List</h1>
+        <p class="small">JS Week 6 | Arrays, forEach, push, filter</p>
+      </div>
+    </header>
+
+    <!-- Left panel: form -->
+     <aside class="panel" arial-label="Add contact">
+      <h3 style="margin: 0 0 6px 0">Add new contact</h3>
+
+      <form id="contactForm" autocomplete="off">
+        <label for="name">Name</labe>
+        <input id="name" type="text" placeholder="e.g. Thapelo" required>
+
+        <label for="phone">Phone</label>
+        <input id="phone" type="tel" placeholder="e.g. 0123456789">
+
+        <label for="email">Email</label>
+        <input id="email" type="email" placeholder="e.g. you@example.com">
+
+        <div class="btn-row">
+          <button class="btn" type="submit">Add contact</button>
+          <button id="clearBtn" class="btn ghost" type="button">Clear all</button>
+        </div>
+
+        <p id="formMsg" class="small"></p>
+      </form>
+    </aside>
+
+    <!-- right column: search + list -->
+     <section class="list-area">
+      <div class="search">
+        <input id="searchInput" type="text" placeholder="Search contacts by name.">
+        <button id="refreshBtn" class="btn ghost">Reset</button>
+      </div>
+
+      <div class="contacts" id="contactList">
+        <!-- contacts will load here -->
+      </div>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+
+  </body>
+</html>
