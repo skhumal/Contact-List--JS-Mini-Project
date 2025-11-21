@@ -13,7 +13,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetic";
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica";
 }
 
 html, body{
@@ -71,10 +71,10 @@ input[type="tel"]{
   width: 100%;
   padding: 10px;
   border-radius: 8px;
-  border: 1px solid rgba(255,255,255,0.04);
-  background: transparent;
+  border: 1px solid rgba(255,255,255,0.12);
   color: inherit;
   margin-top: 6px;
+  background: rgba(255,255,255,0.03);
 }
 
 .btn-row{
@@ -120,7 +120,7 @@ input[type="tel"]{
 }
 
 .contacts{
-  background: rgba(255, 255, 255, 0.02);
+  background: rgba(255, 255, 255, 0.05);
   padding: 12px;
   border-radius:10px;
   min-height: 200px;
@@ -160,6 +160,10 @@ input[type="tel"]{
   background: transparent;
   cursor: pointer;
   color: var(--muted);
+}
+
+.deleteBtn:hover{
+  color: var(--danger);
 }
 
 @media(max-width: 880px){
